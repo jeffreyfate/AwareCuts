@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.jeffthefate.awarecuts_dev"
+      android:versionCode="14"
+      android:versionName="3.2.1">
+    <uses-feature android:name="android.hardware.bluetooth" />
+    <uses-feature android:name="android.hardware.location" />
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.wifi" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+    <application
+        android:name="com.jeffthefate.awarecuts_dev.ApplicationEx"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name_dev" >
+        <activity android:name="com.jeffthefate.awarecuts_dev.ActivityConfig"
+                  android:label="@string/app_name_dev"
+                  android:excludeFromRecents="true"
+                  android:theme="@style/SetupActivity" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name=".receiver.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.RemoveReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver 
+            android:name=".widget.WidgetProvider"
+            android:label="@string/widget_dev"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <service android:name="com.jeffthefate.awarecuts_dev.receiver.ReceiverService" />
+        <service android:name="com.jeffthefate.awarecuts_dev.widget.RestartService" />
+        <service android:name="com.jeffthefate.awarecuts_dev.widget.RefreshService" />
+    </application>
+</manifest>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/WidgetLayout" >
+    <LinearLayout
+        android:id="@+id/LinearLayoutWidgetVertical1"
+        style="@style/VerticalLayout" >
+        <RelativeLayout 
+            android:id="@+id/RelativeLayoutIcon1"
+            style="@style/RelativeLayout" >
+            <ImageView
+                android:id="@+id/ImageViewWidget1"
+                style="@style/IconImage"
+                android:contentDescription="@string/iconDescription" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/TextViewWidget1"
+            style="@style/IconText" />
+    </LinearLayout>
+</LinearLayout>

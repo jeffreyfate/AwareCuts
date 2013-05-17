@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="294dp"
+    android:minHeight="72dp"
+    android:updatePeriodMillis="0"
+    android:initialLayout="@layout/widget_progress"
+    android:configure="com.jeffthefate.awarecuts_dev.ActivityConfig" >
+</appwidget-provider>
+
+<!-- 
+
+Note: If the device is asleep when it is time for an update (as defined by 
+updatePeriodMillis), then the device will wake up in order to perform the update.
+If you don't update more than once per hour, this probably won't cause significant 
+problems for the battery life. If, however, you need to update more frequently 
+and/or you do not need to update while the device is asleep, then you can instead 
+perform updates based on an alarm that will not wake the device. To do so, set an 
+alarm with an Intent that your AppWidgetProvider receives, using the AlarmManager. 
+Set the alarm type to either ELAPSED_REALTIME or RTC, which will only deliver the 
+alarm when the device is awake. Then set updatePeriodMillis to zero ("0").
+
+ -->

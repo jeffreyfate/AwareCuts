@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InconsistentArrays">
+        <ignore path="res\values\arrays.xml" />
+    </issue>
+    <issue id="UselessParent" severity="ignore" />
+    <issue id="ViewConstructor" severity="ignore" />
+</lint>

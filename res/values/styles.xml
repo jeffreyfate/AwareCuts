@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SetupActivity" parent="@android:style/Theme" />
+    
+    <style name="IconText" parent="@android:style/Widget.TextView">
+        <item name="android:text">@string/notext</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">0</item>
+        <item name="android:maxWidth">72dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:paddingTop">1dip</item>
+        <item name="android:paddingBottom">1dip</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:background">@drawable/textview_roundbackground</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13dip</item>
+        <item name="android:textScaleX">0.95</item>
+    </style>
+    
+    <style name="IoonImageBadge" parent="@style/IconImage">
+        <item name="android:visibility">invisible</item>
+    </style>
+    
+    <style name="IconImage">
+        <item name="android:src">@drawable/empty</item>
+        <item name="android:layout_width">48dip</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="IconImageSmall">
+        <item name="android:src">@drawable/empty</item>
+        <item name="android:layout_width">32dip</item>
+        <item name="android:layout_height">32dip</item>
+        <item name="android:layout_margin">2dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginBottom">20dip</item>
+    </style>
+    
+    <style name="AppLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="SmallIconHorizontalLayout" parent="@style/VerticalLayout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">top</item>
+    </style>
+    
+    <style name="VerticalLayout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="WidgetLayout">
+        <item name="android:id">@+id/LinearLayoutWidget</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="ProgressBar" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:layout_height">48dip</item>
+        <item name="android:layout_width">48dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    
+    <style name="RelativeLayoutProgressBarImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="LinearLayoutProgressBarImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    
+    <style name="NoRecentsText" parent="@android:style/Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/noRecents</item>
+        <item name="android:textSize">18dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">1dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:shadowColor">@android:color/black</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:shadowDy">1.5</item>
+    </style>
+    
+    <style name="RelativeLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">5dip</item>
+    </style>
+    
+    <style name="LinearLayoutDialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">5dip</item>
+    </style>
+    
+    <style name="DialogText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">text</item>
+        <item name="android:padding">5dip</item>
+    </style>
+    
+    <style name="DialogTextSmall" parent="@style/DialogText">
+        <item name="android:textSize">12dip</item>
+    </style>
+    
+    <style name="DialogTextNormal" parent="@style/DialogText">
+        <item name="android:textSize">16dip</item>
+    </style>
+    
+    <style name="DialogTextLarge" parent="@style/DialogText">
+        <item name="android:textSize">24dip</item>
+    </style>
+    
+    <style name="DialogTextXLarge" parent="@style/DialogText">
+        <item name="android:textSize">32dip</item>
+    </style>
+        
+    <style name="DialogImage">
+        <item name="android:padding">5dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="DialogCheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/checkboxtext</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:checked">true</item>
+        <item name="android:textSize">18dip</item>
+    </style>
+    
+</resources>

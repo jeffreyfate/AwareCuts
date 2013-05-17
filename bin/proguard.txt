@@ -1,0 +1,28 @@
+# view AndroidManifest.xml #generated:24
+-keep class com.jeffthefate.awarecuts_dev.ActivityConfig { <init>(...); }
+
+# view AndroidManifest.xml #generated:20
+-keep class com.jeffthefate.awarecuts_dev.ApplicationEx { <init>(...); }
+
+# view res/xml/settings.xml #generated:45
+# view res/xml/settings.xml #generated:49
+-keep class com.jeffthefate.awarecuts_dev.preference.ButtonPreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:32
+-keep class com.jeffthefate.awarecuts_dev.receiver.BootReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class com.jeffthefate.awarecuts_dev.receiver.ReceiverService { <init>(...); }
+
+# view AndroidManifest.xml #generated:38
+-keep class com.jeffthefate.awarecuts_dev.receiver.RemoveReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class com.jeffthefate.awarecuts_dev.widget.RefreshService { <init>(...); }
+
+# view AndroidManifest.xml #generated:56
+-keep class com.jeffthefate.awarecuts_dev.widget.RestartService { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.jeffthefate.awarecuts_dev.widget.WidgetProvider { <init>(...); }
+

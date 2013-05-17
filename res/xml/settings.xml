@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="@string/recent_settings">
+    <ListPreference
+        android:summary="@string/RowPrefSummary"
+        android:title="@string/RowPrefTitle"
+        android:key="@string/row_key"
+        android:entries="@array/displayWordRow"
+        android:entryValues="@array/returnValueRow"
+        android:defaultValue="0" />
+    <ListPreference
+        android:summary="@string/IconPrefSummary"
+        android:title="@string/IconPrefTitle"
+        android:key="@string/icon_key"
+        android:entries="@array/displayWordIcon"
+        android:entryValues="@array/returnValueIcon"
+        android:defaultValue="4" />
+    <CheckBoxPreference
+        android:summary="@string/AdvPrefSummary"
+        android:title="@string/AdvPrefTitle"
+        android:key="@string/adv_key"
+        android:defaultValue="false" />
+    <PreferenceCategory
+        android:summary="@string/AdvCategorySummary"
+        android:title="@string/AdvCategoryTitle"
+        android:key="@string/adv_cat_key"
+        android:enabled="false" >
+        <CheckBoxPreference
+	        android:summary="@string/AppsSummary"
+	        android:title="@string/AppsTitle"
+	        android:key="@string/apps_key"
+	        android:defaultValue="true" />
+        <CheckBoxPreference
+            android:summary="@string/BookmarksSummary"
+            android:title="@string/BookmarksTitle"
+            android:key="@string/bookmarks_key"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:summary="@string/ContactsSummary"
+            android:title="@string/ContactsTitle"
+            android:key="@string/contacts_key"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+    <com.jeffthefate.awarecuts_dev.preference.ButtonPreference
+        android:summary="@string/SettingsButtonSummary"
+        android:title="@string/SettingsButtonTitle"
+        android:key="@string/button_key" />
+    <com.jeffthefate.awarecuts_dev.preference.ButtonPreference
+        android:summary="@string/DonateButtonSummary"
+        android:title="@string/DonateButtonTitle"
+        android:key="@string/donate_key" />
+</PreferenceScreen>

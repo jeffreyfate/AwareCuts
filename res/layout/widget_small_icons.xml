@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayoutSmallIconsVertical"
+    style="@style/VerticalLayout" >
+    <LinearLayout
+        android:id="@+id/LinearLayoutSmallIconsHorizontal1"
+        style="@style/SmallIconHorizontalLayout" >
+        <ImageView
+            android:id="@+id/ImageViewWidget1"
+            style="@style/IconImageSmall"
+            android:contentDescription="@string/iconDescription" />
+        <ImageView
+            android:id="@+id/ImageViewWidget2"
+            style="@style/IconImageSmall"
+            android:contentDescription="@string/iconDescription" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LinearLayoutSmallIconsHorizontal2"
+        style="@style/SmallIconHorizontalLayout" >
+        <ImageView
+            android:id="@+id/ImageViewWidget3"
+            style="@style/IconImageSmall"
+            android:contentDescription="@string/iconDescription" />
+        <ImageView
+            android:id="@+id/ImageViewWidget4"
+            style="@style/IconImageSmall"
+            android:contentDescription="@string/iconDescription" />
+    </LinearLayout>
+</LinearLayout>

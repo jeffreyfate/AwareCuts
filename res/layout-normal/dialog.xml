@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/DialogLayout"
+    style="@style/LinearLayoutDialog" >
+    <TextView 
+        android:id="@+id/DialogText"
+        style="@style/DialogTextNormal"/>
+    <ImageView 
+        android:id="@+id/DialogImage"
+        style="@style/DialogImage"
+        android:contentDescription="@string/dialogDescription" />
+    <CheckBox
+        android:id="@+id/DialogCheckBox"
+        style="@style/DialogCheckBox" />
+</LinearLayout>

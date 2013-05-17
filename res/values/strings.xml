@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name_dev">Aware Cuts Dev</string>
+    
+    <string name="recent_settings">recent_settings</string>
+    
+    <string name="RowPrefSummary">How many icons are in the previous row?</string>
+    <string name="RowPrefTitle">Last Widget Size</string>
+    <string name="row_key">row_pref</string>
+    
+    <string name="IconPrefSummary">How many icons in this row?</string>
+    <string name="IconPrefTitle">New Widget Size</string>
+    <string name="icon_key">icon_pref</string>
+    
+    <string name="AdvPrefSummary">Set more advanced options</string>
+    <string name="AdvPrefTitle">Advanced Options</string>
+    <string name="adv_key">adv_pref</string>
+    
+    <string name="AdvCategorySummary">Include and exclude types</string>
+    <string name="AdvCategoryTitle">Shortcut Types</string>
+    <string name="adv_cat_key">adv_cat_pref</string>
+    
+    <string name="AppsSummary">Include or exclude apps</string>
+    <string name="AppsTitle">App Shortcuts</string>
+    <string name="apps_key">apps_pref</string>
+    
+    <string name="BookmarksSummary">Include or exclude bookmarks</string>
+    <string name="BookmarksTitle">Bookmark Shortcuts</string>
+    <string name="bookmarks_key">bookmarks_pref</string>
+    
+    <string name="ContactsSummary">Include or exclude contacts</string>
+    <string name="ContactsTitle">Contact Shortcuts</string>
+    <string name="contacts_key">contact_pref</string>
+    
+    <string name="SettingsButton">Done</string>
+    <string name="SettingsButtonSummary">Commit settings for the widget</string>
+    <string name="SettingsButtonTitle">Done</string>
+    <string name="button_key">button_pref</string>
+    
+    <string name="DonateButton">Donate</string>
+    <string name="DonateButtonSummary">Make a donation</string>
+    <string name="DonateButtonTitle">Donate</string>
+    <string name="donate_key">donate_pref</string>
+    
+    <string name="notext">No Text</string>
+    
+    <string name="widget_dev">Aware Cuts Dev</string>
+    
+    <string name="first_use_1">Welcome to Aware Cuts!\n\nWhen you add a new 
+        widget, it will start keeping track of which applications, bookmarks 
+        and contacts you are using.  It will attempt to predict which of
+        these you will want to use at the current time of day, your current
+        location, the day of the week, as well as other factors.\n\nThere is no 
+        requirement for network access because we DON\'T collect any data.
+    </string>
+    
+    <string name="first_use_2">Groups of icons are made up of rows of widgets. 
+        To create a widget that has 3 rows of icons, create 3 widgets.
+    </string>
+    
+    <string name="first_use_3">When creating a widget, select how many icons are
+        in the row directly above it, or None if it is the first row.  Also 
+        select how many icons will be in the current row, 3, 4, 5, 12, 16 or 20.
+        The larger numbers represent small icon versions as shown below.
+    </string>
+    
+    <string name="checkboxtext">Always display this dialog</string>
+    
+    <string name="iconDescription">Icon placeholder</string>
+    
+    <string name="dialogDescription">Demo image</string>
+    
+    <string name="noRecents">No recent shortcuts</string>
+
+</resources>
